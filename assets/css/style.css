@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.about-me, .skills, .projects, .contact {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+section {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Dentro de tu archivo style.css */
+.profile-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%; /* Si deseas agregar esquinas redondeadas */
+}
+
+/* Dentro de tu archivo style.css */
+.contact a {
+    color: #3498db; /* Cambia el color del enlace según tus preferencias */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline; /* Efecto al pasar el ratón sobre el enlace */
+}
+
+/* Dentro de tu archivo style.css */
+.contact iframe {
+    border: 1px solid #ccc; /* Añade un borde alrededor del iframe */
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    body {
+        font-size: 14px;
+    }
+}

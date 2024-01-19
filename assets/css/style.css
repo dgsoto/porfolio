@@ -50,12 +50,6 @@ section {
     text-decoration: underline; /* Efecto al pasar el ratón sobre el enlace */
 }
 
-/* Dentro de tu archivo style.css */
-.contact iframe {
-    border: 1px solid #ccc; /* Añade un borde alrededor del iframe */
-}
-
-
 @media only screen and (max-width: 600px) {
     /* Estilos específicos para pantallas más pequeñas */
     body {

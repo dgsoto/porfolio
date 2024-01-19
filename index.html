@@ -3,60 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Diego Gonzales Soto, especializado en QA Testing. Encuentra información sobre mis habilidades, proyectos destacados y cómo contactarme.">
-    <meta name="keywords" content="QA Testing, Pruebas de Software, Aseguramiento de Calidad, Proyectos de QA, Diego Gonzales Soto">
+    <meta name="description" content="Diego Gonzales Soto, especialista en QA Testing. Explora mi portafolio para descubrir cómo garantizo la calidad del software a través de pruebas funcionales, automatización y más.">
+    <meta name="keywords" content="QA Testing, Pruebas de Software, Aseguramiento de Calidad, Automatización de Pruebas, Proyectos de QA, Diego Gonzales Soto, qa testing portafolio, manual tester resume, testing bolivia, dgsoto">
     <meta name="author" content="Diego Gonzales Soto">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portafolio - Diego Gonzales Soto</title>
+    
     <!-- Agrega otras etiquetas meta según sea necesario, como etiquetas Open Graph para compartir en redes sociales -->
     <link rel="canonical" href="https://dgsoto-qa.vercel.app/">
-    <meta property="og:title" content="Portafolio - Diego Gonzales Soto">
-    <meta property="og:description" content="¡Bienvenido a mi portafolio! Soy Diego Gonzales Soto, especializado en QA Testing. Descubre mis habilidades, proyectos destacados y cómo contactarme.">
+    <meta property="og:title" content="Diego Gonzales Soto - Especialista en QA Testing">
+    <meta property="og:description" content="Explora el portafolio de Diego Gonzales Soto, especializado en QA Testing. Descubre cómo garantizo la calidad del software a través de pruebas funcionales, automatización y más.">
     <meta property="og:image" content="assets/images/dgsoto.jpg">
     <meta property="og:url" content="https://dgsoto-qa.vercel.app/">
     <meta property="og:type" content="website">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Diego Gonzales Soto - Especialista en QA Testing</title>
 </head>
 <body>
-    <header>
-        <img src="assets/images/dgsoto.jpg" alt="Diego Gonzales Soto - QA Testing" class="profile-image">
-        <h1>Diego Gonzales Soto - QA Testing</h1>
-        <!-- Agrega una imagen o logo si lo tienes -->
+    <header class="text-white text-center p-5" style="background-image: url('assets/images/qa-testing-header.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <img src="assets/images/dgsoto.jpg" alt="Diego Gonzales Soto - QA Testing" class="profile-image img-fluid rounded-circle mb-4">
+                    <h1 class="display-5">Diego Gonzales Soto - QA</h1>
+                    <!-- Agrega una imagen o logo si lo tienes -->
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section class="about-me">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about-me">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos Destacados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-me" class="container py-5">
         <h2>Sobre Mí</h2>
         <p>Soy un apasionado de la calidad de software, especializado en pruebas y aseguramiento de la calidad.</p>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="container py-5">
         <h2>Habilidades</h2>
-        <ul>
-            <li>Pruebas de Funcionalidad</li>
-            <li>Automatización de Pruebas</li>
-            <li>Pruebas de Rendimiento</li>
-            <li>QA Agile</li>
+        <ul class="list-group">
+            <li class="list-group-item">Pruebas de Funcionalidad</li>
+            <li class="list-group-item">Automatización de Pruebas</li>
+            <li class="list-group-item">API Testing</li>
+            <li class="list-group-item">Web Testing</li>
+            <li class="list-group-item">QA Agile</li>
             <!-- Agrega más habilidades según sea necesario -->
         </ul>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="container py-5">
         <h2>Proyectos Destacados</h2>
         <!-- Agrega información sobre tus proyectos destacados -->
     </section>
 
-    <section class="contact">
+    <section id="contact" class="container py-5">
         <h2>Contacto</h2>
-        <p>Email: dgsoto.testing.bo@gmail.com</p>
-        <p>Telefono: +591 65242442</p>
-        <p>LinkedIn: https://www.linkedin.com/in/diego-gonzales-soto/</p>
-        <p><a href="assets/pdf/cv_qa_diego_gonzales_soto_2024.pdf" target="_blank">CV</a></p>
+        <p>Email: <a href="mailto:dgsoto.testing.bo@gmail.com">dgsoto.testing.bo@gmail.com</a></p>
+        <p>Teléfono: +591 65242442</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/diego-gonzales-soto/" target="_blank">Perfil de LinkedIn</a></p>
+        <p>Curriculum vitae: <a href="assets/pdf/cv_qa_diego_gonzales_soto_2024.pdf" target="_blank">CV QA Diego Gonzales Soto</a></p>
         <!-- Agrega más información de contacto según sea necesario -->
     </section>
 
-    <footer>
-        <center>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Diego Gonzales Soto - Portafolio de QA Testing</p>
-        </center>
     </footer>
+
+    <!-- Bootstrap JS y Popper.js (requisitos para Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+# Directorios a ignorar
+.idx/
+.vscode/
+
+# Archivos a ignorar
+.DS_Store
+Thumbs.db
+
+# Archivos generados automáticamente
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archivos de configuración
+*.env
+*.properties
+
+# Archivos de registro
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Archivos de prueba
+*.spec.js
+*.test.js
+
+# Otros archivos que no deben subirse a Git
+node_modules/
+coverage/
+dist/
+build/

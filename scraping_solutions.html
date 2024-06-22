@@ -50,37 +50,80 @@
             background-color: #333;
             color: #fff;
         }
+        .lang-btn {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            margin: 5px;
+        }
     </style>
+    <script>
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(el => {
+                if (el.dataset.lang === lang) {
+                    el.style.display = 'block';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage('es'); // Set default language
+            document.getElementById('lang-es').addEventListener('click', () => setLanguage('es'));
+            document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+        });
+    </script>
 </head>
 <body>
     <header>
         <h1>Web Scraping Solutions</h1>
-        <p>Soluciones Profesionales de Extracción de Datos</p>
+        <p data-lang="es">Soluciones Profesionales de Extracción de Datos</p>
+        <p data-lang="en" style="display: none;">Professional Data Extraction Solutions</p>
+        <button class="lang-btn" id="lang-es">Español</button>
+        <button class="lang-btn" id="lang-en">English</button>
     </header>
     <nav>
-        <a href="#services">Servicios</a>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#contact">Contacto</a>
+        <a href="#services" data-lang="es">Servicios</a>
+        <a href="#services" data-lang="en" style="display: none;">Services</a>
+        <a href="#about" data-lang="es">Sobre Nosotros</a>
+        <a href="#about" data-lang="en" style="display: none;">About Us</a>
+        <a href="#contact" data-lang="es">Contacto</a>
+        <a href="#contact" data-lang="en" style="display: none;">Contact</a>
     </nav>
     <section id="services">
-        <h2>Servicios</h2>
-        <p>Ofrecemos una amplia gama de servicios de web scraping para satisfacer las necesidades de tu negocio.</p>
+        <h2 data-lang="es">Servicios</h2>
+        <h2 data-lang="en" style="display: none;">Services</h2>
+        <p data-lang="es">Ofrecemos una amplia gama de servicios de web scraping para satisfacer las necesidades de tu negocio.</p>
+        <p data-lang="en" style="display: none;">We offer a wide range of web scraping services to meet your business needs.</p>
         <ul>
-            <li>Extracción de datos personalizados</li>
-            <li>Minería de datos web</li>
-            <li>Soluciones de scraping automatizadas</li>
-            <li>Consultoría en scraping</li>
+            <li data-lang="es">Extracción de datos personalizados</li>
+            <li data-lang="en" style="display: none;">Custom data extraction</li>
+            <li data-lang="es">Minería de datos web</li>
+            <li data-lang="en" style="display: none;">Web data mining</li>
+            <li data-lang="es">Soluciones de scraping automatizadas</li>
+            <li data-lang="en" style="display: none;">Automated scraping solutions</li>
+            <li data-lang="es">Consultoría en scraping</li>
+            <li data-lang="en" style="display: none;">Scraping consultancy</li>
         </ul>
     </section>
     <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>En Web Scraping Solutions, somos un equipo de expertos dedicados a proporcionar soluciones de web scraping de alta calidad. Nuestro objetivo es ayudar a las empresas y desarrolladores a obtener datos valiosos de la web de manera eficiente y profesional.</p>
+        <h2 data-lang="es">Sobre Nosotros</h2>
+        <h2 data-lang="en" style="display: none;">About Us</h2>
+        <p data-lang="es">En Web Scraping Solutions, somos un equipo de expertos dedicados a proporcionar soluciones de web scraping de alta calidad. Nuestro objetivo es ayudar a las empresas y desarrolladores a obtener datos valiosos de la web de manera eficiente y profesional.</p>
+        <p data-lang="en" style="display: none;">At Web Scraping Solutions, we are a team of experts dedicated to providing high-quality web scraping solutions. Our goal is to help businesses and developers obtain valuable data from the web efficiently and professionally.</p>
     </section>
     <section id="contact">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta o necesitas una solución personalizada? ¡Contáctanos!</p>
-        <p>Email: <a href="diegogonzalesqa.engineer@gmail.com">diegogonzalesqa.engineer@gmail.com</a></p>
-        <p>Síguenos en redes sociales:</p>
+        <h2 data-lang="es">Contacto</h2>
+        <h2 data-lang="en" style="display: none;">Contact</h2>
+        <p data-lang="es">¿Tienes alguna pregunta o necesitas una solución personalizada? ¡Contáctanos!</p>
+        <p data-lang="en" style="display: none;">Do you have any questions or need a customized solution? Contact us!</p>
+        <p>Email: <a href="mailto:diegogonzalesqa.engineer@gmail.com">diegogonzalesqa.engineer@gmail.com</a></p>
+        <p data-lang="es">Síguenos en redes sociales:</p>
+        <p data-lang="en" style="display: none;">Follow us on social media:</p>
         <a href="https://www.facebook.com/profile.php?id=61561341870416"><i class="fab fa-facebook"></i> Facebook</a> | 
         <a href="https://x.com/DgsotoDream"><i class="fab fa-twitter"></i> Twitter</a> | 
         <a href="https://www.linkedin.com/in/diego-gonzales-soto/"><i class="fab fa-linkedin"></i> LinkedIn</a>
